@@ -7,10 +7,10 @@ import java.io.Serializable;
 public final class Degree implements
 		Comparable<Degree>,Serializable{
 	private Integer id;
-	private String description;
-	private String no;
-	private String remarks;
-	{
+		private String description;
+		private String no;
+		private String remarks;
+		{
 		this.id = IdService.getId();
 	}
 	public Degree(Integer id, String description, String no, String remarks) {

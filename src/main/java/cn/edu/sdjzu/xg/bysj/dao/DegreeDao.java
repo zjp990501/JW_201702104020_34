@@ -20,7 +20,9 @@ public final class DegreeDao {
 	public Collection<Degree> findAll() throws SQLException {
 		degrees = new TreeSet<Degree>();
 		Connection connection = JdbcHelper.getConn();
+		//创建语句盒子
 		Statement stmt = connection.createStatement();
+		//编译语句挑选出来的
 		ResultSet resultSet = stmt.executeQuery("select * from Degree");
 
 		while(resultSet.next()){

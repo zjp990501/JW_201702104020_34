@@ -21,7 +21,7 @@ public class LogoutController extends HttpServlet {
 //        response.getWriter().println(session!=null);
         if (session != null){
             session.invalidate();
-            response.getWriter().println("退出成功");
+            response.getWriter().println("Exit success!");
         }
     }
 }

@@ -26,7 +26,7 @@ public class LoginController extends HttpServlet{
         try {
             User loggedUser = UserService.getInstance().login(username,password);
             if (loggedUser != null){
-                message.put("message","登陆成功!!");
+                message.put("message","Login success!!");
                 HttpSession session = request.getSession();
                 //十分钟内没有操作,则session失效
                 session.setMaxInactiveInterval(600);

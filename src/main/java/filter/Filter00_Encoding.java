@@ -15,8 +15,8 @@ public class Filter00_Encoding implements Filter {
         HttpServletResponse response= (HttpServletResponse)resp;
         String path = request.getRequestURI();
 //        if (!path.contains("/login")){
-            response.setContentType("text/html;charset=UTF-8");
-            if (request.getMethod() == "POST" || request.getMethod() == "GET")
+//            response.setContentType("text/html;charset=UTF-8");
+//            if (request.getMethod() == "POST" || request.getMethod() == "GET")
                 response.setContentType("text/html;charset=UTF-8");
 //        }
         chain.doFilter(req, resp);
